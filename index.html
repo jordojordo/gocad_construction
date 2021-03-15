@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GoCadmium is Under Construction</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GoCadmium is Under Construction</title>
+    <link href="./tailwind.min.css" rel="stylesheet" />
+
+    <style>
+      .divider {
+        border-bottom: 1px solid #7c90a0;
+        width: 100%;
+        box-shadow: 0 0 1px -0.5px #090b35;
+      }
+      .centered {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .blob-container {
+        background: center / contain no-repeat url("blob-main.svg"),
+      }
+    </style>
+  </head>
+  <body class="bg-white">
+    <div class="container centered flex flex-col justify-center items-center">
+      <div id="logo">
+        <img class="h-52" src="Logo-Color1.svg" alt="Logo" />
+      </div>
+      <div class="divider"></div>
+      <div class="blob-container"></div>
+    </div>
+  </body>
 </html>
